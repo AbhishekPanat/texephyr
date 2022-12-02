@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="CSS/index.css">
+    <title>Admin Login</title>
+</head>
+<body>
+    <div class="container">
+        <div class="container_left_half">
+
+            <div class="logo_images">
+                <img class="logo" src = "assets/Logo.png" alt = "logo" />
+                <img class = "logo_name" src = "assets/Logo_Name.png" alt = "logo_name" />
+            </div>
+            <div class="signin">
+                <div class="sign_in_heading">
+                    <h1 class="signin_text">Sign In</h1>    
+                </div>
+                <form name="admin-form">
+                    <div role="alert" id="invalid_credentials" aria-hidden="true">
+                        <!-- Invalid Credentials.... -->
+                    </div>
+                    <div class="email_id_label">
+                        <label for = "email_id">Email Id:</label>
+                        <input type="text" id = "email_id" required autocomplete="off"/>
+                    </div>
+                    <div class="password_label">
+                        <label for = "password">Password:</label>
+                        <input type="password" id = "password" required />
+                    </div>
+                        <button value="Submit" id = "myButton" class = "submit_button"  onclick="submitForm()">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+            
+        <div class="container_right_half">
+                <img class = "right_image" src="assets/right_image.jfif" alt="right_image">
+        </div>
+    </div>
+
+
+    <script src="index.js"></script>
+
+</body>
+</html>
